@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rn7 - Waves</title>
+    <meta
+      name="description"
+      content="Site moderno para promover o álbum URANUS, com tracklist, links e um mini game de surf direto no navegador."
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/uranus.png" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-blur">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+          <span class="brand-badge">
+            <span class="glow-dot" aria-hidden="true"></span>
+            <span class="fw-bold">URANUS</span>
+          </span>
+        </a>
+
+        <button
+          class="navbar-toggler focus-ring"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#album">Álbum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tracks">Faixas</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#game">Jogo</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#links">Links</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-sm btn-neo focus-ring" href="#game"
+                ><i class="bi bi-controller"></i> Jogar agora</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="top" class="hero">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-12 col-lg-6">
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="pill"><i class="bi bi-disc"></i> Álbum</span>
+              <span class="pill"><i class="bi bi-soundwave"></i> Wave</span>
+              <span class="pill"><i class="bi bi-stars"></i> Mini Game</span>
+            </div>
+
+            <h1 class="hero-title">
+              Com 9 faixas <span class="gradient-text">Waves</span> é um projeto
+              "nostálgico e futurista" ao mesmo tempo.
+            </h1>
+            <p class="mt-3 subtle hero-sub">
+              Conheça um pouco mais sobre o álbum, veja a tracklist, ouça nas
+              plataformas e jogue o mini game exclusivo inspirado na vibe do
+              disco.
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <a class="btn btn-neo btn-lg focus-ring" href="#links"
+                ><i class="bi bi-play-circle"></i> Ouvir</a
+              >
+              <button
+                class="btn btn-ghost btn-lg focus-ring"
+                data-bs-toggle="modal"
+                data-bs-target="#howToModal"
+                type="button"
+              >
+                <i class="bi bi-question-circle"></i> Ordem Cronológica
+              </button>
+            </div>
+
+            <div class="note mt-4 tiny">
+              <strong>A Tracklist</strong> não segue ordem cronológica; a ordem
+              é de acordo com a vibe da música (começando da faixa mais agitada
+              e terminando com a mais suave).
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="glass album-card p-3 p-md-4" id="album">
+              <div class="row g-3 align-items-center">
+                <div class="col-12 col-md-6">
+                  <img
+                    class="cover"
+                    src="assets/capa.jpg"
+                    alt="Capa do álbum"
+                  />
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <h2 class="mb-1 section-title">
+                      <span class="gradient-text">Rn7 - Waves</span>
+                    </h2>
+                    <span class="pill">2026</span>
+                  </div>
+
+                  <div class="d-grid gap-2">
+                    <a class="btn btn-neo focus-ring" href="#game"
+                      ><i class="bi bi-controller"></i> Jogar Wave Game</a
+                    >
+                    <a class="btn btn-ghost focus-ring" href="#tracks"
+                      ><i class="bi bi-list-stars"></i> Ver tracklist</a
+                    >
+                  </div>
+
+                  <hr class="border-opacity-10 my-3" />
+
+                  <div class="d-flex flex-wrap gap-2">
+                    <span class="pill"
+                      ><i class="bi bi-music-note"></i> 9 faixas</span
+                    >
+                    <span class="pill"><i class="bi bi-people"></i> feats</span>
+                    <span class="pill"
+                      ><i class="bi bi-headphones"></i> streaming</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="tracks" class="section">
+      <div class="container">
+        <div
+          class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3"
+        >
+          <div>
+            <h2 class="section-title">Faixas</h2>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="glass p-3 p-md-4">
+              <div class="d-grid gap-2" id="trackList">
+                <div class="track">
+                  <div><strong>1. Águia</strong><br /><small>02:38</small></div>
+                  <span class="pill">Rap/Trap</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong>2. Fato$ &amp; Mentira$ (feat. Unj0g)</strong
+                    ><br /><small>03:25</small>
+                  </div>
+                  <span class="pill">Rap/Trap</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong>3. NAVNAX9</strong><br /><small>02:09</small>
+                  </div>
+                  <span class="pill">Plug</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong>4. Quem é Quem</strong><br /><small>02:01</small>
+                  </div>
+                  <span class="pill">Plug</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong>5. Dramática (feat. Woodan)</strong><br /><small
+                      >01:52</small
+                    >
+                  </div>
+                  <span class="pill">Plug</span>
+                </div>
+                <div class="track">
+                  <div><strong>6. Wave</strong><br /><small>02:54</small></div>
+                  <span class="pill">Trap</span>
+                </div>
+                <div class="track">
+                  <div>
+                    <strong>7. Jersey Waves</strong><br /><small>03:05</small>
+                  </div>
+                  <span class="pill">Jersey Club/RnB</span>
+                </div>
+                <div class="track">
+                  <div><strong>8. Honey</strong><br /><small>02:28</small></div>
+                  <span class="pill">Hip Hop 00s</span>
+                </div>
+                <div class="track">
+                  <div><strong>9. Way</strong><br /><small>03:07</small></div>
+                  <span class="pill">RnB/Soul</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="glass p-3 p-md-4 h-100">
+              <h3 class="h5 fw-bold mb-2">Press / Release</h3>
+              <p class="subtle">
+                Cole aqui um texto curto sobre o álbum (origem, conceito,
+                estética, principais faixas e feats). Use este bloco também para
+                contato de booking/assessoria.
+              </p>
+
+              <div class="mt-3">
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="pill"
+                    ><i class="bi bi-envelope"></i> contato@seudominio.com</span
+                  >
+                  <span class="pill"
+                    ><i class="bi bi-instagram"></i> @seuperfil</span
+                  >
+                  <span class="pill"
+                    ><i class="bi bi-whatsapp"></i> +55 (00) 00000-0000</span
+                  >
+                </div>
+              </div>
+
+              <hr class="border-opacity-10 my-3" />
+
+              <div class="d-grid gap-2">
+                <a class="btn btn-neo focus-ring" href="#links"
+                  ><i class="bi bi-box-arrow-up-right"></i> Abrir links</a
+                >
+                <a class="btn btn-ghost focus-ring" href="#game"
+                  ><i class="bi bi-controller"></i> Jogar para desbloquear
+                  “Easter egg”</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="game" class="section">
+      <div class="container">
+        <div
+          class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3"
+        >
+          <div>
+            <h2 class="section-title">Wave Rider</h2>
+          </div>
+          <div class="d-flex gap-2">
+            <button
+              class="btn btn-ghost btn-sm focus-ring"
+              data-bs-toggle="modal"
+              data-bs-target="#gameHelp"
+              type="button"
+            >
+              <i class="bi bi-info-circle"></i> Controles
+            </button>
+            <button
+              class="btn btn-sm btn-neo focus-ring"
+              id="btnStart"
+              type="button"
+            >
+              <i class="bi bi-play-fill"></i> Iniciar
+            </button>
+          </div>
+        </div>
+
+        <div class="game-stage" id="gameStage">
+          <div
+            class="glass p-2 mb-2 d-flex flex-wrap gap-2 align-items-center justify-content-between game-info-bar"
+            aria-live="polite"
+          >
+            <div class="d-flex flex-wrap gap-2 align-items-center">
+              <span class="pill"
+                ><i class="bi bi-trophy"></i> Score:
+                <span id="score">0</span></span
+              >
+              <span class="pill"
+                ><i class="bi bi-graph-up"></i> Melhor:
+                <span id="best">0</span></span
+              >
+              <span class="pill"
+                ><i class="bi bi-lightning-charge"></i> Combo:
+                <span id="combo">x1</span></span
+              >
+              <span class="pill"
+                ><i class="bi bi-fire"></i> Stoke:
+                <span id="stoke">0%</span></span
+              >
+            </div>
+          </div>
+
+          <div class="game-shell no-select">
+            <div class="game-controls">
+              <button
+                class="btn btn-ghost btn-sm focus-ring"
+                id="btnPause"
+                title="Pausar"
+                type="button"
+              >
+                <i class="bi bi-pause-fill"></i>
+              </button>
+              <button
+                class="btn btn-ghost btn-sm focus-ring"
+                id="btnRestart"
+                title="Reiniciar"
+                type="button"
+              >
+                <i class="bi bi-arrow-clockwise"></i>
+              </button>
+            </div>
+            <canvas
+              id="surfCanvas"
+              width="1100"
+              height="520"
+              aria-label="Jogo de surf"
+              role="img"
+            ></canvas>
+          </div>
+        </div>
+
+        <div class="row g-3 mt-3">
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="glass p-3 p-md-4">
+              <h3 class="h5 fw-bold mb-2">Como funciona</h3>
+              <ul class="subtle mb-3">
+                <li>
+                  <span class="kbd">Espaço</span> / <span class="kbd">↑</span> /
+                  <span class="kbd">W</span> = pular
+                </li>
+                <li>
+                  No ar: <span class="kbd">←</span> /
+                  <span class="kbd">A</span> e <span class="kbd">→</span> /
+                  <span class="kbd">D</span> para girar e fazer trick
+                </li>
+                <li>
+                  <span class="kbd">Shift</span> (ou <span class="kbd">B</span>)
+                  = boost (consome “Stoke”)
+                </li>
+              </ul>
+
+              <h3 class="h5 fw-bold mb-2">Celular</h3>
+              <ul class="subtle mb-0">
+                <li>Toque para pular</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-10 mx-auto">
+            <div class="glass p-3 p-md-4">
+              <h3 class="h5 fw-bold mb-2">Easter egg</h3>
+              <p class="subtle mb-2">
+                Quando o score passa de <strong>2222</strong>, você pode
+                desbloquear um link secreto.
+              </p>
+              <div class="d-grid gap-2">
+                <button
+                  class="btn btn-ghost focus-ring"
+                  id="btnSecret"
+                  disabled
+                  type="button"
+                >
+                  <i class="bi bi-lock"></i> Link secreto
+                </button>
+                <small class="subtle"><code>SECRET_URL</code> YouTube </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="links" class="section">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-lg-8 mx-auto">
+            <div class="glass p-3 p-md-4">
+              <div
+                class="d-flex align-items-center justify-content-between flex-wrap gap-2"
+              >
+                <div>
+                  <h2 class="section-title mb-1">Ouça / Siga</h2>
+                </div>
+                <span class="pill"><i class="bi bi-share"></i> Links</span>
+              </div>
+
+              <div class="row g-2 mt-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a
+                    class="btn btn-neo w-100 focus-ring"
+                    href="https://open.spotify.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><i class="bi bi-spotify"></i> Spotify</a
+                  >
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a
+                    class="btn btn-ghost w-100 focus-ring"
+                    href="https://music.apple.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><i class="bi bi-apple"></i> Apple Music</a
+                  >
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a
+                    class="btn btn-ghost w-100 focus-ring"
+                    href="https://www.youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><i class="bi bi-youtube"></i> YouTube</a
+                  >
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a
+                    class="btn btn-ghost w-100 focus-ring"
+                    href="https://soundcloud.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    ><i class="bi bi-soundwave"></i> SoundCloud</a
+                  >
+                </div>
+              </div>
+
+              <div class="note tiny mt-3 mb-0">
+                <strong>Origem do Projeto</strong>
+                <span class="gradient-text">Waves:</span> Confira "Iphone Verde"
+                (2021)
+              </div>
+
+              <hr class="border-opacity-10 my-3" />
+
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <button
+                  class="btn btn-ghost focus-ring"
+                  id="btnShare"
+                  type="button"
+                >
+                  <i class="bi bi-share"></i> Compartilhar
+                </button>
+                <a class="btn btn-ghost focus-ring" href="#top"
+                  ><i class="bi bi-arrow-up"></i> Voltar ao topo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-2"
+        >
+          <div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="glow-dot" aria-hidden="true"></span>
+              <strong>URANUS RECORDS</strong>
+            </div>
+            <div class="tiny">
+              © <span id="year"></span> • Rn7 -
+              <span class="gradient-text">Waves</span>
+            </div>
+          </div>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="pill text-decoration-none" href="#links"
+              ><i class="bi bi-link-45deg"></i> Links</a
+            >
+            <a class="pill text-decoration-none" href="#game"
+              ><i class="bi bi-controller"></i> Game</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="howToModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content modal-surface">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold">Cronologia</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ol class="subtle mb-0">
+              <li>
+                <strong>Wave:</strong> substitua
+                <code>assets/capa.jpg</code> pela sua capa.
+              </li>
+              <li>
+                <strong>Jersey Waves:</strong> procure por “URANUS” e troque
+                pelo nome do artista/álbum.
+              </li>
+              <li>
+                <strong>Quem é Quem:</strong> edite os blocos dentro de
+                <code>#trackList</code>.
+              </li>
+              <li>
+                <strong>NAVNAX9:</strong> troque os <code>href</code> na seção
+                “Ouça / Siga”.
+              </li>
+              <li>
+                <strong>Fato$ &amp; Mentira$:</strong> no JS, defina
+                <code>SECRET_URL</code> e a pontuação para desbloquear.
+              </li>
+              <li>
+                <strong>Águia:</strong> GitHub Pages / Netlify / Vercel (suba
+                esta pasta inteira).
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="gameHelp" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-surface">
+          <div class="modal-header border-0">
+            <h5 class="modal-title fw-bold">Controles do Wave Rider</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="subtle mb-0">
+              <li>
+                Pular: <span class="kbd">Espaço</span> /
+                <span class="kbd">↑</span> / <span class="kbd">W</span> (ou
+                toque)
+              </li>
+              <li>
+                Trick no ar: <span class="kbd">←</span>/<span class="kbd"
+                  >A</span
+                >
+                e <span class="kbd">→</span>/<span class="kbd">D</span>
+              </li>
+              <li>
+                Boost: <span class="kbd">Shift</span> (ou
+                <span class="kbd">B</span>)
+              </li>
+              <li><span class="kbd">P</span>: pausar</li>
+              <li><span class="kbd">R</span>: reiniciar</li>
+              <li><span class="kbd">Esc</span>: sair do modo jogo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
